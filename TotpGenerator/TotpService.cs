@@ -132,7 +132,7 @@ namespace TotpGenerator
         private static ulong GetNextTimeStepNumber(int minutes)
         {
 #if NETSTANDARD2_0
-            var delta = DateTime.UtcNow - _unixEpoch;
+            var delta = DateTime.UtcNow.AddMinutes(minutes) - _unixEpoch;
 #else
             var delta = DateTimeOffset.UtcNow.AddMinutes(minutes) - DateTimeOffset.UnixEpoch;
 #endif
