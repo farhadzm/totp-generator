@@ -1,4 +1,4 @@
-You can generate `Totp` code based on time, `UserSecurityStamp` and `UserIdentifier`
+You can generate `Totp` code based on time, `UserSecurityStamp` and `UserIdentifier` and `ExpirationTime`
 
 **Usage:**
 ```CSharp
