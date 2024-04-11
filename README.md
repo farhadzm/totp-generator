@@ -1,5 +1,6 @@
 You can generate `Totp` code based on time, `UserSecurityStamp` and `UserIdentifier`
-**Usage**
+
+**Usage:**
 ```CSharp
 public async ValueTask<int> GetTwoFactorTotpCode(string email)
 {
