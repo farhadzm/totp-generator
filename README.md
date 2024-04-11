@@ -1,5 +1,9 @@
 You can generate `Totp` code based on time, `UserSecurityStamp` and `UserIdentifier` and `ExpirationTime`
 
+Nuget:
+```xml
+<PackageReference Include="TotpGenerator" Version="1.0.1" />
+```
 **Usage:**
 ```CSharp
 public async ValueTask<int> GetTwoFactorTotpCode(string email)
@@ -43,7 +47,4 @@ public enum TotpEnum : byte
 }
 
 ```
-Nuget:
-```xml
-<PackageReference Include="TotpGenerator" Version="1.0.1" />
-```
+
