@@ -22,8 +22,8 @@ namespace TotpGenerator
         /// <summary>
         /// Genarating totp code based on securityStampToken, modifier and time. 
         /// </summary>
-        /// <param name="securityStampToken"></param>
-        /// <param name="modifier"></param>
+        /// <param name="securityStampToken">securityStampToken of user</param>
+        /// <param name="modifier">modifier should include user identifier and totp porpuse. for example: "1:TwoFactorAuthentication" </param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         public static int GenerateCode(string securityStampToken, string modifier)
