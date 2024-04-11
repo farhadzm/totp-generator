@@ -1,6 +1,6 @@
 You can generate `Totp` code based on time, `UserSecurityStamp` and `UserIdentifier` and `ExpirationTime`
 
-Nuget:
+[NuGet:](https://www.nuget.org/packages/TotpGenerator/)
 ```xml
 <PackageReference Include="TotpGenerator" Version="1.0.1" />
 ```
