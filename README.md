@@ -1,4 +1,6 @@
-You can generate `Totp` code based on time, `UserSecurityStamp` and `UserIdentifier` and `ExpirationTime`
+You can generate `Totp` code based on time, `UserSecurityStamp` and `UserIdentifier` and `ExpirationTime`.
+
+You can use this package instead of  [`Rfc6238AuthenticationService`](https://github.com/dotnet/aspnetcore/blob/ce16ff0a51a74811674228835696e5cc78494fd7/src/Identity/Extensions.Core/src/Rfc6238AuthenticationService.cs) class for generating `totp` code with identity.
 
 [NuGet:](https://www.nuget.org/packages/TotpGenerator/)
 ```xml
