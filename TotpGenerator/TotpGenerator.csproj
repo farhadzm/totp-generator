@@ -1,19 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-<PropertyGroup>
-	<Description>Genarate Totp Code library.</Description>
-	<VersionPrefix>1.0.0</VersionPrefix>
-	<Authors>Farhad Zamani</Authors>
-	<TargetFrameworks>net7.0;net6.0;net5.0;netstandard2.1;netstandard2.0;</TargetFrameworks>
-	<GenerateDocumentationFile>true</GenerateDocumentationFile>
-	<AssemblyName>TotpGenerator</AssemblyName>
-	<PackageId>TotpGenerator</PackageId>
-	<PackageTags>Totp;Passwrod;Time-based one-time password;.NET;aspnetcore</PackageTags>
-	<PackageProjectUrl>https://github.com/farhadzm/totp-generator</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/farhadzm/totp-generator</RepositoryUrl>
-	<RepositoryType>git</RepositoryType>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-</PropertyGroup>
+	<PropertyGroup>
+		<Description>Genarate Totp Code library.</Description>
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<Authors>Farhad Zamani</Authors>
+		<TargetFrameworks>net7.0;net6.0;net5.0;netstandard2.1;netstandard2.0;</TargetFrameworks>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<AssemblyName>TotpGenerator</AssemblyName>
+		<PackageId>TotpGenerator</PackageId>
+		<PackageTags>Totp;Passwrod;Time-based one-time password;.NET;aspnetcore</PackageTags>
+		<PackageProjectUrl>https://github.com/farhadzm/totp-generator</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/farhadzm/totp-generator</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../README.md" Link="README.md" Pack="true" PackagePath="/" Visible="false"/>
+	</ItemGroup>
 
 </Project>
