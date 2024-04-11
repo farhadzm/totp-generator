@@ -43,3 +43,7 @@ public enum TotpEnum : byte
 }
 
 ```
+Nuget:
+```xml
+<PackageReference Include="TotpGenerator" Version="1.0.1" />
+```
