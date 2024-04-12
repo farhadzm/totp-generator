@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<Description>Genarate Totp Code library.</Description>
-		<VersionPrefix>1.0.1</VersionPrefix>
+		<VersionPrefix>1.0.2</VersionPrefix>
 		<Authors>Farhad Zamani</Authors>
 		<TargetFrameworks>net7.0;net6.0;net5.0;netstandard2.1;netstandard2.0;</TargetFrameworks>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
