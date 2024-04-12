@@ -4,7 +4,7 @@ You can use this package instead of  [Rfc6238AuthenticationService](https://gith
 
 [NuGet:](https://www.nuget.org/packages/TotpGenerator/)
 ```xml
-<PackageReference Include="TotpGenerator" Version="1.0.1" />
+<PackageReference Include="TotpGenerator" Version="1.0.2" />
 ```
 **Usage:**
 ```CSharp
