@@ -6,6 +6,8 @@ You can use this package instead of  [Rfc6238AuthenticationService](https://gith
 ```xml
 <PackageReference Include="TotpGenerator" Version="1.0.2" />
 ```
+![image](https://github.com/farhadzm/totp-generator/assets/48260228/2e8bdddb-b9fa-40f4-9de4-237342f25d30)
+
 **Usage:**
 ```CSharp
 public async ValueTask<int> GetTwoFactorTotpCode(string email)
