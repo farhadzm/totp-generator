@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TotpGenerator", "TotpGenerator\TotpGenerator.csproj", "{A245C9E9-FC25-401C-9F0E-C19E74CF21E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TotpGenerator", "TotpGenerator\TotpGenerator.csproj", "{A245C9E9-FC25-401C-9F0E-C19E74CF21E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TotpGenerator.SampleApi", "TotpGenerator.SampleApi\TotpGenerator.SampleApi.csproj", "{7188D44E-3C15-4142-9E6D-E621609EEFEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TotpGenerator.SampleApi", "TotpGenerator.SampleApi\TotpGenerator.SampleApi.csproj", "{7188D44E-3C15-4142-9E6D-E621609EEFEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TotpGenerator.Test", "TotpGenerator.Test\TotpGenerator.Test.csproj", "{D7B561FB-54BA-4B63-A97F-ED3B46AD8CA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7188D44E-3C15-4142-9E6D-E621609EEFEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7188D44E-3C15-4142-9E6D-E621609EEFEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7188D44E-3C15-4142-9E6D-E621609EEFEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B561FB-54BA-4B63-A97F-ED3B46AD8CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B561FB-54BA-4B63-A97F-ED3B46AD8CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B561FB-54BA-4B63-A97F-ED3B46AD8CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B561FB-54BA-4B63-A97F-ED3B46AD8CA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
