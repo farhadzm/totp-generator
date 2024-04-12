@@ -13,7 +13,7 @@ namespace TotpGenerator
     {
         private static readonly Encoding _encoding = new UTF8Encoding(false, true);
 
-        private static readonly TimeSpan _timeStep = TimeSpan.FromMinutes(1);
+        private static readonly TimeSpan _timeStep = TimeSpan.FromSeconds(1);
 #if NETSTANDARD2_0
         private static readonly DateTime _unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
         private static readonly RandomNumberGenerator _rng = RandomNumberGenerator.Create();
@@ -67,7 +67,7 @@ namespace TotpGenerator
 
             using (var hashAlgorithm = new HMACSHA1(securityTokenBytes))
             {
-                for (var i = -Math.Abs(expirationInMinutes); i <= 1; i++)
+                for (var i = -Math.Abs(expirationInMinutes * 60); i <= 1; i++)
                 {
                     var currentTimeStep = GetNextTimeStepNumber(i);
 
@@ -129,12 +129,12 @@ namespace TotpGenerator
             return (ulong)(delta.Ticks / _timeStep.Ticks);
         }
 
-        private static ulong GetNextTimeStepNumber(int minutes)
+        private static ulong GetNextTimeStepNumber(int seconds)
         {
 #if NETSTANDARD2_0
-            var delta = DateTime.UtcNow.AddMinutes(minutes) - _unixEpoch;
+            var delta = DateTime.UtcNow.AddSeconds(seconds) - _unixEpoch;
 #else
-            var delta = DateTimeOffset.UtcNow.AddMinutes(minutes) - DateTimeOffset.UnixEpoch;
+            var delta = DateTimeOffset.UtcNow.AddSeconds(seconds) - DateTimeOffset.UnixEpoch;
 #endif
             return (ulong)(delta.Ticks / _timeStep.Ticks);
         }
